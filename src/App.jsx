@@ -19,7 +19,7 @@ function App() {
 
   const askBot = async (text) => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/chat", {
+      const res = await fetch("https://rag-ai.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text }),
